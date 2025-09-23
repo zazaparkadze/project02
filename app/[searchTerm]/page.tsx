@@ -38,12 +38,12 @@ export default async function WikiSearchResults({ params }: Props) {
       <h1 id="top" className="text-3xl">
         Results for {`\"${searchTerm}\"`}
       </h1>
-      <div className="w-[100%] flex flex-col items-end sticky top-25">
+      <div className="w-[100%] flex flex-col items-end sticky top-32">
         <p className="text-4xl  bg-transparent md:text-5xl">
           <Link href="#">&#9757;</Link>{" "}
         </p>
       </div>
-      <div className="w-[100%] flex flex-col items-end sticky top-45">
+      <div className="w-[100%] flex flex-col items-end sticky top-47">
         <p className="text-4xl  bg-transparent md:text-5xl">
           <Link href="/">&#127969;</Link>{" "}
         </p>
