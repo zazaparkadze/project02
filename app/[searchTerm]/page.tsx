@@ -1,5 +1,6 @@
 import getWikiResults from "@/lib/getWikiResults";
 import Item from "./components/item";
+import Link from "next/link";
 
 type Props = {
   params: {
@@ -30,7 +31,7 @@ export default async function WikiSearchResults({ params }: Props) {
   const data: SearchResults = await wikiData;
   const results: Result[] | undefined = data?.query?.pages;
 
-  const emojis = ["&#127969;", "&#9757;"];
+  /*   const emojis = ["&#127969;", "&#9757;"]; */
 
   const content = (
     <div className="flex flex-col items-center text-amber-300">
@@ -39,12 +40,12 @@ export default async function WikiSearchResults({ params }: Props) {
       </h1>
       <div className="w-[100%] flex flex-col items-end sticky top-25">
         <p className="text-4xl  bg-transparent md:text-5xl">
-          <a href="#">&#9757;</a>{" "}
+          <Link href="#">&#9757;</Link>{" "}
         </p>
       </div>
       <div className="w-[100%] flex flex-col items-end sticky top-45">
         <p className="text-4xl  bg-transparent md:text-5xl">
-          <a href="/">&#127969;</a>{" "}
+          <Link href="/">&#127969;</Link>{" "}
         </p>
       </div>
       {results ? (
