@@ -53,7 +53,7 @@ export default async function WikiSearchResults({ params }: Props) {
           return <Item result={result} key={result.pageid} />;
         })
       ) : (
-        <h2>No Results</h2>
+        <h2 className="p-8">No Results</h2>
       )}
     </div>
   );
